@@ -1,37 +1,6 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BasikCode apps</title>
-<meta name="description" content="Free Android apps by BasikCode: Bigger or Not (trivia game) and Speech to Text Offline.">
-<style>
-:root{--bg:#f6f4ef;--fg:#1d1b18;--muted:#6b665e;--card:#fff;--line:#e4dfd5;--btn:#1d1b18;--btnfg:#fff}
-@media (prefers-color-scheme:dark){:root{--bg:#141210;--fg:#f1ece3;--muted:#a39c90;--card:#1f1c19;--line:#34302a;--btn:#f1ece3;--btnfg:#141210}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:480px;margin:auto;padding:32px 16px 48px}h1{font-size:24px;margin:0 0 4px;text-align:center}
-.sub{color:var(--muted);text-align:center;margin:0 0 24px;font-size:14px}
-.app{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;margin-bottom:14px;text-decoration:none;color:inherit}
-.app img{width:72px;height:72px;border-radius:16px;flex:none}.app h2{font-size:17px;margin:0}.app p{margin:2px 0 8px;color:var(--muted);font-size:14px}
-.btn{display:inline-block;background:var(--btn);color:var(--btnfg);border-radius:999px;padding:5px 14px;font-size:14px;font-weight:600}
-footer{text-align:center;color:var(--muted);font-size:12px;margin-top:24px}
-</style></head><body><main>
-<h1>BasikCode</h1><p class="sub" data-t="sub">Free Android apps. No account needed.</p>
-<a class="app" data-pkg="com.basikcode.biggerornot" href="https://play.google.com/store/apps/details?id=com.basikcode.biggerornot">
-  <img src="bigger-or-not.png" alt=""><div><h2>Bigger or Not</h2><p data-t="bon">Which is bigger, faster, heavier? 1,000+ trivia duels.</p><span class="btn" data-t="get">Get it on Google Play</span></div></a>
-<a class="app" data-pkg="com.basikcode.transcriber" href="https://play.google.com/store/apps/details?id=com.basikcode.transcriber">
-  <img src="transcriber.png" alt=""><div><h2>Speech to Text Offline</h2><p data-t="stt">Turns speech into text on your phone. Your audio never leaves it.</p><span class="btn" data-t="get">Get it on Google Play</span></div></a>
-<footer>© BasikCode</footer>
-</main>
-<script>
-// Install referrer: which profile the visitor came from (?from=tiktok|instagram|youtube) ends up in each app's analytics.
-var from = (new URLSearchParams(location.search).get("from") || "web").replace(/[^a-z0-9_-]/gi, "").slice(0, 20);
-document.querySelectorAll("a.app").forEach(function (a) {
-  a.href = "https://play.google.com/store/apps/details?id=" + a.dataset.pkg + "&referrer=" +
-    encodeURIComponent("utm_source=social&utm_medium=bio&utm_campaign=" + from);
-});
-var fr = {sub: "Applis Android gratuites. Sans compte.", bon: "Lequel est le plus grand, rapide, lourd ? Plus de 1 000 duels.",
-  stt: "Transforme la voix en texte sur votre téléphone. Votre audio n'en sort jamais.", get: "Disponible sur Google Play"};
-if ((navigator.language || "").slice(0, 2) === "fr") {
-  document.documentElement.lang = "fr";
-  document.querySelectorAll("[data-t]").forEach(function (e) { if (fr[e.dataset.t]) e.textContent = fr[e.dataset.t]; });
-}
-</script></body></html>
+<html lang="en"><head><meta charset="utf-8"><title>BasikCode apps</title>
+<link rel="canonical" href="https://basikcode-dev.github.io/">
+<script>location.replace("https://basikcode-dev.github.io/" + location.search);</script>
+<meta http-equiv="refresh" content="0; url=https://basikcode-dev.github.io/">
+</head><body><a href="https://basikcode-dev.github.io/">basikcode-dev.github.io</a></body></html>
